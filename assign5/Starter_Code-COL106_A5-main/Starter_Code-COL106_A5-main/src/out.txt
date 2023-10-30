@@ -1,0 +1,17 @@
+PUSH 5
+PUSH 2
+MUL
+PUSH 3
+ADD
+mem[0] = POP
+
+PUSH mem[0]
+PUSH 2
+DIV
+mem[1] = POP
+
+DEL = mem[1]
+
+PUSH mem[0]
+RET = POP
+
